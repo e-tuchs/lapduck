@@ -7,7 +7,7 @@ setup(
     long_description=open('README.txt').read(),
     author='e-tuchs',
     author_email='xuwulin0@gmail.com',
-    maintainer='estore',
+    maintainer='origin',
     url='http://www.lapduck.com/',
     package_data = {
             "origincore": ['locale/zh_CN/LC_MESSAGES/*.mo'],
