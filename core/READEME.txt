@@ -1,0 +1,6 @@
+# This was the origin package core
+  And origin was a http interface tools for rpc eg: mobile
+  
+  This was depend for Django >=1.8.0
+
+
