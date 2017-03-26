@@ -1,6 +1,9 @@
 # This was the origin package core
   And origin was a http interface tools for rpc eg: mobile
   
-  This was depend for Django >=1.8.0
-
+  This was depend for: 	Django >=1.8.0
+			Python 2.7
+			Pymongo==3.4.0
+			MySQL-python==1.2.3
+			
 
