@@ -9,7 +9,7 @@ from pymongo import DESCENDING, ASCENDING
 logger = logging.getLogger('origincore')
 
 
-class MongodbStorage(object):
+class MongodbConnector(object):
     _db = None
     ORDER_DESC = DESCENDING
     ORDER_ASC = ASCENDING
