@@ -48,11 +48,11 @@ class AjaxUploadWidget(forms.FileInput):
         f_type = 'apk' if 'download_path' in attrs['id'] else 'img'
         output.append((r"""
                 <div style="margin-bottom: 20px;" class="">
-                    <button type="button" class="btn btn-primary js-upload-photos">
+                    <button type="button" class="btn btn-primary uploadbtn">
                     <span class="glyphicon glyphicon-cloud-upload"></span>点击上传</button>
                     <input id="fileupload" type="file" name="%s" class="fileupload"
                         style="display: none;"
-                    data-url="/admin/progress-bar-upload/" accept="%s">
+                    data-url="/admin/progressbaruploadview/" accept="%s">
                     <div class="imgbox" style="float:right;margin-left: 10px"></div>
                     <input name="%s" class="valstorage" type="text" style="display: none;">
                 </div>
@@ -81,7 +81,7 @@ class AjaxUploadWidget(forms.FileInput):
             '/static/admin/js/jquery-file-upload/vendor/jquery.ui.widget.js',
             '/static/admin/js/jquery-file-upload/jquery.fileupload.js',
             '/static/admin/js/jquery-file-upload/jquery.iframe-transport.js',
-            '/static/admin/js/progress-bar-upload.js',
+            '/static/admin/js/progressbarupload.js',
             '/static/admin/js/bootstrap.min.js',
         )       # 必须按该顺序加载js， 否则控件不能正常工作
         css = {
